@@ -11,7 +11,33 @@
 <body>
     <script>
         let add7=(a,b=7)=> a+b
-        alert(add7(10));
+        console.log(add7(10));
+
+        function multiply (a,b){
+            return console.log(a*b)
+        }
+        multiply(2,6)
+
+        const capitalize = (str)=>{
+            strcapitalize = '';
+
+            for (let i=0;i < str.length;i++){
+                i === 0 
+                ? (strcapitalize += str[i].toUpperCase())
+                : (strcapitalize += str[i].toLowerCase())
+            }
+            console.log(strcapitalize); 
+            
+        }
+        capitalize("hii")
+
+        const lastLetter = (string)=>{
+            var lastLetter = string.charAt(string.length - 1)
+            console.log(lastLetter);
+        }
+        lastLetter("asdfc");
+
+
     </script>
     <nav>
         <div class="nav col-4">
